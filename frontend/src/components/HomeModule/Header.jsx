@@ -64,7 +64,7 @@ function Header() {
           with BlockPay
         </h1>
         <p className="text-slate-400 font-semibold text-lg md:text-xl lg:text-xl w-full md:w-3/4 lg:w-1/2 py-4">
-          Experience next-generation secure transfers, group payments, and smart savings features with unmatched security and seamless user experience.
+          Seamless, secure, and smart: revolutionize transfers, group payments, and savings on the Pharos Devnet.
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-4 md:gap-8 relative z-10">

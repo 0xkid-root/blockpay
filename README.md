@@ -1,165 +1,129 @@
-🚀 BlockPay Documentation – Pharos Hackathon Submission
-Track: DeFiTeam: Gaurav, BhagravDeployed On: Pharos Devnet🔗 Live Demo📂 GitHub Repository  
+<div align="center">
 
-💡 Project Overview
-BlockPay is a next-generation Web3 payment dApp designed to simplify decentralized transactions on the Pharos Devnet. It replaces complex wallet addresses with human-readable usernames, introduces trust-based on-chain credit scores, and leverages milestone-based smart contracts for secure freelance payments. Built for the Pharos Hackathon, BlockPay combines intuitive user experience with robust blockchain technology to foster adoption and trust in the Pharos ecosystem.
+# BlockPay
 
-🔥 Key Features
-1. Username-Based Transfers
+🔒 Next-Generation Web3 Payment Platform on Pharos Devnet
 
-Send ETH or tokens to @username instead of cumbersome 0x... addresses.
-Powered by a global username registry smart contract.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://blockpay-omega.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/0xkid-root/blockpay)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=for-the-badge)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-2. Freelance Smart Contracts
+[Live Demo](https://blockpay-omega.vercel.app/) | [Documentation](#-documentation) | [Features](#-key-features) | [Setup](#-quick-start) | [Contributing](#-contributing)
 
-Escrow-protected payments with milestone tracking.
-Mutual approval workflows for secure freelance transactions.
-Deadline enforcement and SWC (Standard Work Contract) compliance.
+<img src="frontend/public/favicon.svg" alt="BlockPay Logo" width="120px" height="120px">
 
-3. On-Chain Credit Scores
+</div>
 
-Builds user reputation based on successful transactions and contract completions.
-Enhances trust within the Pharos community.
+## 📖 Documentation
 
-4. AI Chatbot Assistant
+**BlockPay** is a revolutionary Web3 payment dApp built for the Pharos Hackathon, designed to simplify decentralized transactions on the Pharos Devnet. Our platform transforms complex blockchain interactions into intuitive experiences by:
 
-Real-time user support via Botpress integration.
-Guides users through setup, transactions, and FAQs.
+- Replacing hexadecimal addresses with human-readable usernames
+- Implementing trust-based on-chain credit scores
+- Providing secure, milestone-based smart contracts for freelancers
 
-5. User-Friendly Onboarding
+### 🌟 Key Features
 
-Interactive guided tour powered by Driver.js.
-Seamless MetaMask integration for wallet connectivity.
+#### 1. Username-Based Transfers
+- Send ETH/tokens using @usernames instead of addresses
+- Powered by our Username Registry Smart Contract
+- Intuitive and user-friendly transaction process
 
+#### 2. Smart Work Contracts (SWC)
+- Escrow-protected milestone payments
+- Automated approval workflows
+- Deadline enforcement mechanisms
+- Real-time progress tracking
 
-🧠 Hackathon Alignment
+#### 3. Blockchain Credit System
+- On-chain reputation scoring
+- Transaction success metrics
+- Contract completion tracking
+- Trust-building mechanisms
 
+#### 4. Enhanced User Experience
+- AI-powered support chatbot
+- Interactive onboarding tour
+- Seamless MetaMask integration
+- Responsive design across devices
 
+## 🔐 Smart Contracts
 
-Criteria
-BlockPay Alignment
+All contracts are deployed and verified on Pharos Devnet:
 
+| Contract | Address | Purpose |
+|----------|----------|----------|
+| UsernameRegistry | `0xc1FB6A2C6b8Ef118a71A0091946ca59E4fa82F70` | Username-to-address mapping |
+| FundTransfer | `0xB93C0b64caA66cf4A257f6C2D725260e1b664599` | Token transfers and claims |
+| BlockPaySWC | `0x0900B2cfAE177EFCd097e86c60387D6DF4aa14CD` | Freelance contract management |
 
+## 🛠 Technical Stack
 
-Ecosystem Impact
-Enhances Pharos Devnet adoption with user-friendly DeFi tools.
+- **Frontend**: React.js, Vite, TailwindCSS, Framer Motion
+- **Blockchain**: Solidity, Hardhat, Pharos Devnet
+- **Wallet Integration**: MetaMask SDK
+- **User Experience**: Driver.js, Botpress, Lottie Animations
 
+## 🚀 Quick Start
 
-Community Engagement
-Promotes trust through transparent contracts and visible reputation scores.
+### Prerequisites
 
+- Node.js v18+
+- MetaMask Browser Extension
+- Pharos Devnet Configuration:
+  - Network Name: `Pharos Devnet`
+  - RPC URL: `https://devnet.dplabs-internal.com`
+  - Chain ID: `50002`
 
-Innovation
-Combines usernames, escrow contracts, and credit scores for a unique solution.
+### Installation
 
+```bash
+# Clone the repository
+git clone https://github.com/0xkid-root/blockpay.git
 
-Feasibility
-Deployed on Pharos Devnet with modular, scalable smart contracts.
+# Navigate to frontend
+cd blockpay/frontend
 
+# Install dependencies
+npm install
 
-Traction
-Live demo available, active development, and hackathon-ready deliverables.
+# Start development server
+npm run dev
+```
 
+## 🎨 UI/UX Features
 
+- **Theme**: Dark mode with glassmorphism effects
+- **Animations**: Smooth transitions and micro-interactions
+- **Typography**: Poppins & Roboto for optimal readability
+- **Responsiveness**: Mobile-first design approach
+- **Support**: Integrated AI chatbot assistance
 
-🔐 Smart Contracts (Deployed on Pharos Devnet)
-1. UsernameRegistry.sol
+## 🤝 Contributing
 
-Address: 0xc1FB6A2C6b8Ef118a71A0091946ca59E4fa82F70
-Maps wallet addresses to unique usernames.
-Prevents duplicate usernames.
-Emits events for registration tracking.
+We welcome contributions! To contribute:
 
-2. FundTransferWithRegistry.sol
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-Address: 0xB93C0b64caA66cf4A257f6C2D725260e1b664599
-Enables transfers via usernames or addresses.
-Supports claimable/refundable funds.
-Logs transactions with metadata.
+## 📜 License
 
-3. BlockPaySWC.sol
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0) License - perfect for hackathons, research, and evaluation purposes.
 
-Address: 0x0900B2cfAE177EFCd097e86c60387D6DF4aa14CD
-Implements SWC-compliant freelance contracts.
-Features escrow protection, milestone tracking, and reputation updates.
+## 📞 Contact
 
+- **Email**: everythinggaurav48@gmail.com
+- **Twitter**: [@BlockPaySecure](https://x.com/BlockPaySecure)
 
-🌐 Frontend Features
+---
 
-Register/Login: Seamless MetaMask SDK integration.
-Dashboard: Displays balances, transaction history, and active contracts.
-Fund Transfers: Simplified sending via usernames.
-Freelance Workflow: Post jobs, receive proposals, and auto-generate contracts.
-AI Chatbot: Botpress-powered support drawer.
-Onboarding Tour: Guided setup with Driver.js.
+<div align="center">
 
+### 🚀 BlockPay - Empowering the Future of Web3 Payments on Pharos Devnet! 🔥
 
-🎨 UI/UX Design
+Built with 💙 by Team BlockPay
 
-Theme: Dark purple with glassmorphism cards.
-Animations: Smooth transitions using Framer Motion.
-Typography: Poppins and Roboto for readability.
-Responsiveness: Optimized for desktop and mobile.
-Support: Embedded AI chatbot for instant assistance.
-
-
-⚙️ Technical Stack
-
-
-
-Layer
-Technologies
-
-
-
-Frontend
-React.js, Vite, Tailwind CSS, Framer Motion, Driver.js, Lucide Icons
-
-
-Blockchain
-Solidity, Hardhat, Pharos Devnet
-
-
-Wallets
-MetaMask SDK
-
-
-AI/UX
-Botpress, Lottie Animations
-
-
-
-🚀 Setup Instructions
-Prerequisites
-
-Node.js (v18 or higher)
-MetaMask browser extension
-Pharos Devnet added to MetaMask (Chain ID: 50002, RPC URL: https://devnet.dplabs-internal.com)
-
-Local Installation
-
-Clone the repository:git clone https://github.com/0xkid-root/blockpay.git
-
-
-Navigate to the frontend directory:cd blockpay/frontend
-
-
-Install dependencies:npm install
-
-
-Run the development server:npm run dev
-
-
-Connect MetaMask to Pharos Devnet and interact with the dApp.
-
-
-📜 License
-Licensed under the Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0) License. Suitable for hackathons, academic research, and engineering evaluation, but not for commercial use.
-
-🤝 Contributing
-We welcome contributions! Please open issues or submit pull requests on our GitHub repository to help improve BlockPay.
-
-📧 Contact
-For inquiries, support, or collaboration opportunities, reach out via email: everythinggaurav48@gmail.com.
-
-🚀 BlockPay – Empowering the Future of Web3 Payments on Pharos Devnet! 🔥
+</div>

@@ -6,6 +6,7 @@ import { FaShieldAlt, FaHandshake, FaUserTag } from "react-icons/fa";
 import Footer from "../components/HomeModule/Footer";
 import LogoCloud from "../components/HomeModule/LogoCloud";
 import CommitmentStepsSection from "../components/HomeModule/CommitmentStepsSection";
+
 const pageVariants = {
   initial: { opacity: 0, y: 50 },
   animate: {
@@ -37,7 +38,11 @@ const cardItemVariants = {
     scale: 1,
     transition: {
       duration: 0.5,
-      ease: "easeOut",}, },};
+      ease: "easeOut",
+    },
+  },
+};
+
 const FeatureCard = memo(({ title, description, icon }) => (
   <motion.div variants={cardItemVariants}>
     <Cards title={title} description={description} icon={icon} />
@@ -75,6 +80,7 @@ const features = [
     ),
   },
 ];
+
 function Home() {
   return (
     <motion.div
@@ -85,7 +91,7 @@ function Home() {
       className="bg-customDarkpurple min-h-screen"
     >
       <Header />
-   <section className="w-full px-4 py-10 text-white">
+      <section className="w-full px-4 py-10 text-white">
         <div className="flex flex-col items-center text-center mx-4">
           <motion.h1
             className="text-customPurple text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4"
@@ -119,6 +125,43 @@ function Home() {
         </div>
       </section>
       <CommitmentStepsSection />
+      <section className="w-full px-4 py-16 text-white bg-gray-900">
+        <div className="flex flex-col items-center text-center mx-4">
+          <motion.h2
+            className="text-customPurple text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+          >
+            Our Vision
+          </motion.h2>
+          <p className="text-customGray text-lg max-w-xl mb-6 font-semibold">
+            A message from our founder on why Blockpay is redefining trust in crypto transactions.
+          </p>
+          <motion.div
+            className="max-w-3xl bg-gray-800 p-8 rounded-lg shadow-lg"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <p className="text-white text-lg italic mb-4">
+              "At Blockpay, we believe trust and simplicity are the future of crypto. Our mission is to empower everyone—freelancers, entrepreneurs, and businesses—with secure, seamless transactions and smart work commitments that deliver results. We’re building a platform where your work and payments are protected, every step of the way."
+            </p>
+
+          </motion.div>
+          <motion.a
+            href="/docs"
+            className="mt-8 inline-block bg-customPurple text-white px-6 py-3 rounded-md font-semibold hover:bg-purple-700 transition-colors"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            Join Our Journey
+          </motion.a>
+        </div>
+      </section>
       <LogoCloud />
       <Footer />
     </motion.div>
