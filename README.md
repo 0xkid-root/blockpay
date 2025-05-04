@@ -1,179 +1,165 @@
-Here's the revised README with the requested changes:
+🚀 BlockPay Documentation – Pharos Hackathon Submission
+Track: DeFiTeam: Gaurav, BhagravDeployed On: Pharos Devnet🔗 Live Demo📂 GitHub Repository  
 
-```markdown
-# 🚀 BlockPay – Revolutionizing Web3 Payments
+💡 Project Overview
+BlockPay is a next-generation Web3 payment dApp designed to simplify decentralized transactions on the Pharos Devnet. It replaces complex wallet addresses with human-readable usernames, introduces trust-based on-chain credit scores, and leverages milestone-based smart contracts for secure freelance payments. Built for the Pharos Hackathon, BlockPay combines intuitive user experience with robust blockchain technology to foster adoption and trust in the Pharos ecosystem.
 
-**Built for Pharos Hackathon**  
-**Track:** DeFi  
-**Team:** Gaurav , Bhagrav  
-**Deployed On:** Pharos DEVNET  
-🔗 [Live Demo](https://cryptify-defi.vercel.app/)  
-📂 [GitHub](https://github.com/0xkid-root/blockpay)  
+🔥 Key Features
+1. Username-Based Transfers
 
----
+Send ETH or tokens to @username instead of cumbersome 0x... addresses.
+Powered by a global username registry smart contract.
 
-## 💡 What is BlockPay?
+2. Freelance Smart Contracts
 
-BlockPay is a next-generation Web3 payment dApp that replaces cumbersome wallet addresses with **human-readable usernames**, integrates **trust-based on-chain credit scores**, and uses **milestone-based smart contracts** for secure freelance payments. Built and deployed on the **Pharos Devnet**, BlockPay offers a seamless, decentralized payment experience.
+Escrow-protected payments with milestone tracking.
+Mutual approval workflows for secure freelance transactions.
+Deadline enforcement and SWC (Standard Work Contract) compliance.
 
----
+3. On-Chain Credit Scores
 
-## 🔥 Why BlockPay?
+Builds user reputation based on successful transactions and contract completions.
+Enhances trust within the Pharos community.
 
-* **Username-Based Transactions**: Send funds to `@jane` instead of 0x... addresses.
-* **Secure Escrow Contracts**: Milestone-based payments with SWC compliance.
-* **On-Chain Reputation**: Trust scores based on transaction history.
-* **User-Friendly Onboarding**: Interactive tour powered by Driver.js.
-* **AI Chatbot**: Real-time support via Botpress integration.
-* **Cross-Platform**: Works with MetaMask SDK across devices.
-* **Tech Stack**: Vite, React, Tailwind CSS, Hardhat, Solidity.
+4. AI Chatbot Assistant
 
----
+Real-time user support via Botpress integration.
+Guides users through setup, transactions, and FAQs.
 
-## 🧠 Hackathon Judging Fit
+5. User-Friendly Onboarding
 
-| **Criteria**              | **BlockPay Alignment**                                                           |
-| ------------------------- | --------------------------------------------------------------------------------- |
-| Ecosystem Impact          | Boosts Pharos Devnet adoption with intuitive UX and reputation incentives         |
-| Community Engagement      | Fosters trust via public contracts, proposals, and visible user reputation        |
-| Innovation & Originality  | Merges usernames, escrow contracts, and credit scores into a unique DeFi solution |
-| Feasibility & Scalability | Leverages low-gas Layer 2/3 infra; modular contracts for easy growth              |
-| Team Strength             | Full-stack developers skilled in Solidity, React, and wallet integrations         |
-| Traction                  | Live demo, active Twitter, chatbot support, and hackathon-ready deliverables      |
+Interactive guided tour powered by Driver.js.
+Seamless MetaMask integration for wallet connectivity.
 
----
 
-## 🎨 UI & UX Design
+🧠 Hackathon Alignment
 
-* **Theme**: Sleek dark purple with glassmorphism cards.
-* **Animations**: Smooth transitions via Framer Motion.
-* **Typography**: Poppins and Roboto for clarity and style.
-* **Responsiveness**: Optimized for desktop and mobile.
-* **Onboarding**: Guided setup tour with Driver.js.
-* **Support**: AI chatbot drawer for instant help.
 
----
 
-## 🔐 Smart Contracts
+Criteria
+BlockPay Alignment
 
-Deployed on **Pharos Devnet**:
 
-### `UsernameRegistry.sol`
 
-📍 **Address**: `0xc1FB6A2C6b8Ef118a71A0091946ca59E4fa82F70`
+Ecosystem Impact
+Enhances Pharos Devnet adoption with user-friendly DeFi tools.
 
-* Maps wallet addresses to unique usernames and vice versa
-* Ensures no duplicate usernames
-* Emits events for registration tracking
 
-### `FundTransferWithRegistry.sol`
+Community Engagement
+Promotes trust through transparent contracts and visible reputation scores.
 
-📍 **Address**: `0xB93C0b64caA66cf4A257f6C2D725260e1b664599` ✅ Updated
 
-* Supports transfers via usernames or addresses
-* Features claimable or refundable funds
-* Logs all transactions with metadata
+Innovation
+Combines usernames, escrow contracts, and credit scores for a unique solution.
 
-### `BlockPaySWC.sol`
 
-📍 **Address**: `0x0900B2cfAE177EFCd097e86c60387D6DF4aa14CD`
+Feasibility
+Deployed on Pharos Devnet with modular, scalable smart contracts.
 
-* Implements SWC-compliant freelance contracts with:
-  * Escrow protection
-  * Approval workflows
-  * Milestone tracking
-  * On-chain reputation updates
 
-*SWC = Standard Work Contract specification for secure freelance payments.*
+Traction
+Live demo available, active development, and hackathon-ready deliverables.
 
----
 
-## 🌐 Frontend Modules
 
-* **Register/Login**: MetaMask SDK integration.
-* **Dashboard**: Balances, transaction history, and contracts.
-* **Fund Transfers**: Send via usernames.
-* **Freelance Workflow**: Post work, receive proposals, auto-generate contracts.
-* **AI Chatbot**: Botpress-powered assistance.
-* **Onboarding Tour**: Driver.js for user guidance.
+🔐 Smart Contracts (Deployed on Pharos Devnet)
+1. UsernameRegistry.sol
 
----
+Address: 0xc1FB6A2C6b8Ef118a71A0091946ca59E4fa82F70
+Maps wallet addresses to unique usernames.
+Prevents duplicate usernames.
+Emits events for registration tracking.
 
-## ⚙️ Tech Stack
+2. FundTransferWithRegistry.sol
 
-| **Layer**  | **Technologies**                                                     |
-| ---------- | -------------------------------------------------------------------- |
-| Frontend   | React.js, Vite, Tailwind CSS, Framer Motion, Driver.js, Lucide Icons |
-| Blockchain | Solidity, Hardhat, Pharos Devnet                                     |
-| Wallets    | MetaMask SDK                                                         |
-| AI/UX      | Botpress, Lottie Animations                                          |
+Address: 0xB93C0b64caA66cf4A257f6C2D725260e1b664599
+Enables transfers via usernames or addresses.
+Supports claimable/refundable funds.
+Logs transactions with metadata.
 
----
+3. BlockPaySWC.sol
 
-## 📜 Features
+Address: 0x0900B2cfAE177EFCd097e86c60387D6DF4aa14CD
+Implements SWC-compliant freelance contracts.
+Features escrow protection, milestone tracking, and reputation updates.
 
-### Username-Based Transfers
 
-Send ETH or tokens to `@username` via a global registry.
+🌐 Frontend Features
 
-### Freelance Smart Contracts
+Register/Login: Seamless MetaMask SDK integration.
+Dashboard: Displays balances, transaction history, and active contracts.
+Fund Transfers: Simplified sending via usernames.
+Freelance Workflow: Post jobs, receive proposals, and auto-generate contracts.
+AI Chatbot: Botpress-powered support drawer.
+Onboarding Tour: Guided setup with Driver.js.
 
-* Escrow-protected payments (milestone-based or single).
-* Mutual approval process.
-* Deadline enforcement.
 
-### On-Chain Credit Scores
+🎨 UI/UX Design
 
-Reputation grows with successful transactions and contract completions.
+Theme: Dark purple with glassmorphism cards.
+Animations: Smooth transitions using Framer Motion.
+Typography: Poppins and Roboto for readability.
+Responsiveness: Optimized for desktop and mobile.
+Support: Embedded AI chatbot for instant assistance.
 
-### AI Chatbot Assistant
 
-* Guides users through setup and FAQs.
-* Embedded via Botpress API.
+⚙️ Technical Stack
 
----
 
-## 🚀 Getting Started
 
-### Prerequisites
+Layer
+Technologies
 
-* Node.js ≥ 18
-* MetaMask browser extension
-* Pharos Devnet added to MetaMask
 
-### Run Locally
 
-```bash
-cd blockpay/frontend
-npm install
-npm run dev
-```
+Frontend
+React.js, Vite, Tailwind CSS, Framer Motion, Driver.js, Lucide Icons
 
-Ensure you have MetaMask installed and Pharos Devnet network added for a smooth experience.
 
----
+Blockchain
+Solidity, Hardhat, Pharos Devnet
 
-## 📄 License
 
-This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)** License.  
-It can be used for **hackathons, academic research, and engineering evaluation** but **cannot be used for commercial purposes**.
+Wallets
+MetaMask SDK
 
----
 
-## 🤝 Contributing
+AI/UX
+Botpress, Lottie Animations
 
-Contributions are welcome! Feel free to open issues, submit PRs, and help improve BlockPay.
 
----
 
-## 📧 Contact Support
+🚀 Setup Instructions
+Prerequisites
 
-For any inquiries, support, or collaboration opportunities, feel free to reach out:
+Node.js (v18 or higher)
+MetaMask browser extension
+Pharos Devnet added to MetaMask (Chain ID: 50002, RPC URL: https://devnet.dplabs-internal.com)
 
----
+Local Installation
 
-🚀 Join our Web3 revolution!
+Clone the repository:git clone https://github.com/0xkid-root/blockpay.git
 
-🔥 Built for the Future of Web3 Payments! 🔥
-```
 
+Navigate to the frontend directory:cd blockpay/frontend
+
+
+Install dependencies:npm install
+
+
+Run the development server:npm run dev
+
+
+Connect MetaMask to Pharos Devnet and interact with the dApp.
+
+
+📜 License
+Licensed under the Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0) License. Suitable for hackathons, academic research, and engineering evaluation, but not for commercial use.
+
+🤝 Contributing
+We welcome contributions! Please open issues or submit pull requests on our GitHub repository to help improve BlockPay.
+
+📧 Contact
+For inquiries, support, or collaboration opportunities, reach out via email: everythinggaurav48@gmail.com.
+
+🚀 BlockPay – Empowering the Future of Web3 Payments on Pharos Devnet! 🔥
