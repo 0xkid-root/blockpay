@@ -4,11 +4,11 @@ import { FilePlus, Search, Compass, Star } from "lucide-react";
 const ContractIntro = ({
   showCreateForm,
   showFetchForm,
-  showReputationFetcher, // New prop
+  showReputationFetcher = false,
   showWorkPostForm,
   onToggleCreateForm,
   onToggleFetchForm,
-  onToggleReputationFetcher, // New callback
+  onToggleReputationFetcher = () => {},
   onToggleWorkPostForm,
   onStartTour,
   contractHooks,
@@ -17,26 +17,24 @@ const ContractIntro = ({
   return (
     <div
       data-driver="contract-intro"
-      className="bg-customSemiPurple/60 backdrop-blur-lg border border-customPurple/30 p-8 rounded-xl space-y-6"
+      className="bg-customSemiPurple/60 backdrop-blur-lg border border-customPurple/30 p-8 rounded-xl space-y-6 w-full max-w-4xl mx-auto"
     >
       <div className="text-center">
         <h2 className="text-3xl font-extrabold text-white mb-2">
-          🚀 Welcome to the SWC System
+          🚀 Discover the SWC System
         </h2>
         <p className="text-gray-300 max-w-3xl text-xl mx-auto">
-          Manage milestone-based contracts and work posts securely on the
-          blockchain. You can create new contracts, manage existing ones, handle
-          proposals, and check anyone's reputation score using their username.
+          Securely manage milestone-based contracts on the Pharos Devnet. Create, track, and verify trust with ease—all powered by blockchain!
         </p>
       </div>
 
       <ul className="list-disc list-inside text-gray-400 text-xl px-4">
-        <li>Create contracts with milestones</li>
-        <li>Fetch and manage existing contracts</li>
-        <li>Check user reliability with their Reputation Score.</li>
+        <li>Launch contracts with milestones</li>
+        <li>Track and manage active contracts</li>
+        <li>Verify trust with Reputation Scores</li>
       </ul>
 
-      <div className="flex flex-wrap justify-center gap-4 pt-2">
+      <div className="flex flex-wrap justify-center gap-4 pt-2 w-full min-w-[600px]">
         <button
           onClick={onToggleCreateForm}
           className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full font-semibold shadow transition"
@@ -55,7 +53,7 @@ const ContractIntro = ({
 
         <button
           onClick={onToggleReputationFetcher}
-          className="flex items-center gap-2 bg-customNeonGreen hover:bg-customNeonGreen/80 text-black px-5 py-2 rounded-full font-semibold shadow transition"
+          className="flex items-center gap-2 bg-customNeonGreen hover:bg-customNeonGreen/80 text-black px-5 py-2 rounded-full font-semibold shadow transition visible"
         >
           <Star size={18} />
           {showReputationFetcher ? "Hide Reputation" : "See Reputation Score"}

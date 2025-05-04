@@ -55,17 +55,16 @@ function Header() {
       <ParticleBackground />
       <div className="flex flex-col items-center text-center text-shadow-custom relative z-10">
         <h1 className="text-customBlue text-5xl md:text-6xl lg:text-8xl font-bold">
-          The Future of{" "}
+          Unlock Web3 Payments
         </h1>
         <h1
           data-driver="step1"
           className="text-customAccent text-5xl md:text-6xl lg:text-7xl font-bold"
         >
-          Secure DEFI
+          with BlockPay
         </h1>
         <p className="text-slate-400 font-semibold text-lg md:text-xl lg:text-xl w-full md:w-3/4 lg:w-1/2 py-4">
-          Experience next-generation secure transfers, group payments, and smart
-          savings features with unmatched security and seamless user experience.
+          Experience next-generation secure transfers, group payments, and smart savings features with unmatched security and seamless user experience.
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-4 md:gap-8 relative z-10">
