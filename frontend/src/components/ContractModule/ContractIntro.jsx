@@ -53,7 +53,7 @@ const ContractIntro = ({
 
         <button
           onClick={onToggleReputationFetcher}
-          className="flex items-center gap-2 bg-customNeonGreen hover:bg-customNeonGreen/80 text-black px-5 py-2 rounded-full font-semibold shadow transition visible"
+          className="flex items-center gap-2 bg-white hover:bg-customNeonGreen/80 text-black px-5 py-2 rounded-full font-semibold shadow transition visible"
         >
           <Star size={18} />
           {showReputationFetcher ? "Hide Reputation" : "See Reputation Score"}

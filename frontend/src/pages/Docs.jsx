@@ -321,7 +321,7 @@ function Docs() {
                 className="text-purple-500 p-1 rounded-md border-b-2 border-purple-500"
               />
               <h1 className="font-bold text-lg lg:text-xl text-white">
-                Cryptify Docs
+                Blockpay Docs
               </h1>
             </div>
           </div>

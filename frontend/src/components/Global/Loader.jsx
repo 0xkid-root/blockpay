@@ -15,7 +15,7 @@ const Loader = () => {
 
       {/* Caption */}
       <p className="text-purple-400 font-semibold animate-pulse text-lg text-center">
-        Mining your crypto magic with Cryptify...
+        Mining your crypto magic with BlockPay...
       </p>
     </div>
   );

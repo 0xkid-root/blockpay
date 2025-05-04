@@ -6,7 +6,6 @@ import { FaShieldAlt, FaHandshake, FaUserTag } from "react-icons/fa";
 import Footer from "../components/HomeModule/Footer";
 import LogoCloud from "../components/HomeModule/LogoCloud";
 import CommitmentStepsSection from "../components/HomeModule/CommitmentStepsSection";
-import Chatbot from "../components/Global/Chatbot";
 const pageVariants = {
   initial: { opacity: 0, y: 50 },
   animate: {
@@ -97,7 +96,7 @@ function Home() {
             Revolutionary Features
           </motion.h1>
           <p className="text-customGray text-lg max-w-xl mb-10 font-semibold">
-            Explore how Cryptify transforms the future of smart work
+            Explore how Blockpay transforms the future of smart work
             commitments.
           </p>
 
@@ -122,7 +121,6 @@ function Home() {
       <CommitmentStepsSection />
       <LogoCloud />
       <Footer />
-      <Chatbot />
     </motion.div>
   );
 }
